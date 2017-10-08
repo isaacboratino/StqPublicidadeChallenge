@@ -3,20 +3,20 @@ Challenge for react native remote work
 
 Create a React Native app
 
- * it should run on both iOS and Android
- * it should use Relay or Relay Modern
- * it should use our boilerplate https://github.com/entria/graphql-dataloader-boilerplate or one or more of the schemas available on https://www.graphqlhub.com/
- * it should show the content inside a FlatList (a list of reddit or hackernews or github or twitter or a mix of them)
+ <b>x</b>  it should run on both iOS and Android<br />
+ <b>x</b> it should use Relay or Relay Modern<br />
+ <b>x</b> it should use our boilerplate https://github.com/entria/graphql-dataloader-boilerplate or one or more of the schemas available on https://www.graphqlhub.com/<br />
+ <b>x</b> it should show the content inside a FlatList (a list of reddit or hackernews or github or twitter or a mix of them)<br />
 
- ✓ it should be open sourced on your github repo
+  <b>✓</b> it should be open sourced on your github repo
  
 
 Extras
 
- * Relay Modern
- * design
- * fastlane
- * authentication
- * own GraphQL server
- * create a storybook with your components
- * tests using jest
+ <b>x</b> Relay Modern<br />
+ <b>x</b> design<br />
+ <b>x</b> fastlane<br />
+ <b>x</b> authentication<br />
+ <b>x</b> own GraphQL server<br />
+ <b>x</b> create a storybook with your components<br />
+ <b>x</b> tests using jest<br />
