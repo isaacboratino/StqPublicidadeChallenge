@@ -13,7 +13,7 @@ Create a React Native app
 Extras
 
  <b>x</b> Relay Modern<br />
- <b>x</b> design<br />
+ <b>✓</b> design<br />
  <b>x</b> fastlane<br />
  <b>x</b> authentication<br />
  <b>x</b> own GraphQL server<br />
