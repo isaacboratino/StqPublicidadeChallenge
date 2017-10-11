@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactNative, { Text, View, Image } from 'react-native';
+import {Icon} from 'react-native-elements';
 import PropTypes from 'prop-types';
+import {ColorsConfig} from './../../Configs';
 
 export default function Header(props) {
   return (
     <View style={Style.viewStyle}>
-      <Image source={{uri:'./header_logo.PNG'}}
-             style={Style.imageStyle}
-             resizeMode='contain'></Image>
+      <Icon
+        containerStyle={Style.imageStyle}
+        name='ios-home'
+        type='ionicon'
+        color='#FFF'
+        />
       <Text style={Style.textStyle}>{props.children}</Text>
     </View>
   );
@@ -15,12 +20,12 @@ export default function Header(props) {
 
 const Style = {
   viewStyle: {
-    backgroundColor: '#0B253E',
+    backgroundColor: ColorsConfig.header.background,
     justifyContent: 'flex-start',
     alignItems: 'center',
     height: 60,
     marginTop: ReactNative.Platform.OS === 'ios' ? 20 : 0,
-    shadowColor: '#000000',
+    shadowColor: ColorsConfig.header.shadow,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     elevation: 2,
@@ -30,7 +35,7 @@ const Style = {
   textStyle: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#FFFFFF'
+    color: ColorsConfig.header.title
   },
   imageStyle: {
     marginHorizontal: 10,

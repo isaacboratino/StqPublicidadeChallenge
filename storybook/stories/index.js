@@ -4,16 +4,25 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import InputIcon from './Components/InputIcon';
+import LoginContainer from './Containers/LoginContainer';
+import FlatListContainer from './Containers/FlatListContainer';
+
 import Title from './Components/Title';
 import Spinner from './Components/Spinner';
 import Header from './Components/Header';
+import Input from './Components/Input';
+
+storiesOf('Containers', module)
+.add('LoginContainer', () => (
+  <LoginContainer></LoginContainer>
+))
+.add('FlatListDemo', () => (
+  <FlatListDemo></FlatListDemo>
+))
 
 storiesOf('Components', module)
-.add('InputIcon', () => (
-  <InputIcon icon={require('../../Images/header_logo.PNG')}
-             label='Label' 
-             value='Value'></InputIcon>
+.add('Input', () => (
+  <Input></Input>
 ))
 .add('Title', () => (
   <Title>Login</Title>

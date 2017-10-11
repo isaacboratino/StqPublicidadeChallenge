@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 import { Button, Card } from 'react-native-elements';
-import { InputIcon, Title, Spinner, Header } from './../../Components';
+import {ColorsConfig} from './../../Configs';
+import Title from '../../Components/Title';
+import Spinner from '../../Components/Spinner';
+import Header from '../../Components/Header';
+import Input from '../../Components/Input';
 
 export default class LoginContainer extends Component {
 
@@ -12,11 +16,13 @@ export default class LoginContainer extends Component {
 
   renderButton() {
     if (this.props.loading) {
-      return (<Spinner size="large"></Spinner>);
+      return (<Spinner size='large'></Spinner>);
     }
 
     return (
-      <Button onPress={this.onEntrarClick.bind(this)}>ENTRAR</Button>
+      <Button title='Entrar' 
+        backgroundColor={ColorsConfig.primaryColor}
+        onPress={this.onEntrarClick.bind(this)}></Button>
     );
   }
 
@@ -27,30 +33,21 @@ export default class LoginContainer extends Component {
           <Header>STQ Publicidade</Header>
           <ScrollView style={styles.containerStyle}>
 
-          <Card>
-            
-            <Title>Login</Title>
+            <Card>
+              
+              <Title>Login</Title>
 
-            <InputIcon
-              placeholder=''
-              label='Usuario'
-              value={this.props.user}
-            />
+              <Input></Input>
+              
+              <Input></Input>
 
-            <InputIcon
-                secureTextEntry
-                placeholder=""
-                label="Senha"
-                value={this.props.password}
-              />
+              <Title>
+                {this.props.error}
+              </Title>
 
-            <Title>
-              {this.props.error}
-            </Title>
+              {this.renderButton()}
 
-            {this.renderButton()}
-
-          </Card>
+            </Card>
 
         </ScrollView>
       </View>
@@ -60,9 +57,9 @@ export default class LoginContainer extends Component {
 
 const styles = {
   containerStyle: {
-    paddingHorizontal: 16,
-    paddingVertical: 16,
-    paddingTop: 20,
+    paddingHorizontal: 0,
+    paddingVertical: 0,
+    paddingTop: 10,
   }
 };
 
