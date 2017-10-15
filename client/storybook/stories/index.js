@@ -4,13 +4,13 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import LoginContainer from './Containers/LoginContainer';
-import FlatListContainer from './Containers/FlatListContainer';
+import LoginContainer from './containers/LoginContainer';
+import FlatListContainer from './containers/FlatListContainer';
 
-import Title from './Components/Title';
-import Spinner from './Components/Spinner';
-import Header from './Components/Header';
-import Input from './Components/Input';
+import Title from './components/Title';
+import Spinner from './components/Spinner';
+import Header from './components/Header';
+import Input from './components/Input';
 
 storiesOf('Containers', module)
 .add('LoginContainer', () => (
