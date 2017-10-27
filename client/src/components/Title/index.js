@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text} from 'react-native';
 import PropTypes from 'prop-types';
-import {ColorsConfig} from './../../Configs';
+import {ColorsConfig} from '../../configs';
 
 export default function Title(props) {
   return (

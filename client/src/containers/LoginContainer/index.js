@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Text, View, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 import { Button, Card } from 'react-native-elements';
-import {ColorsConfig} from './../../Configs';
-import Title from '../../Components/Title';
-import Spinner from '../../Components/Spinner';
-import Header from '../../Components/Header';
-import Input from '../../Components/Input';
+import {ColorsConfig} from '../../configs';
+import Title from '../../components/Title';
+import Spinner from '../../components/Spinner';
+import Header from '../../components/Header';
+import Input from '../../components/Input';
 
 export default class LoginContainer extends Component {
 

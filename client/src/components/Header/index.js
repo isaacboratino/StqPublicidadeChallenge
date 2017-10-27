@@ -2,7 +2,7 @@ import React from 'react';
 import ReactNative, { Text, View, Image } from 'react-native';
 import {Icon} from 'react-native-elements';
 import PropTypes from 'prop-types';
-import {ColorsConfig} from './../../Configs';
+import {ColorsConfig} from '../../configs';
 
 export default function Header(props) {
   return (
