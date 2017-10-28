@@ -1,5 +1,8 @@
 import { AppRegistry } from 'react-native';
 import StorybookUI from './storybook';
-import App from './src/App';
+import {AppNavigator} from './src/AppNavigator';
 
-AppRegistry.registerComponent('StqPublicidadeChallenge', () => __DEV__ ? StorybookUI : App);
+console.disableYellowBox = true;
+
+//AppRegistry.registerComponent('StqPublicidadeChallenge', () => __DEV__ ? StorybookUI : AppNavigator);
+AppRegistry.registerComponent('StqPublicidadeChallenge', () => AppNavigator);

@@ -1,4 +1,6 @@
 import React from 'react';
+import {View, ScrollView} from 'react-native';
+import {Card} from 'react-native-elements';
 
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
@@ -17,12 +19,34 @@ storiesOf('Containers', module)
   <LoginContainer></LoginContainer>
 ))
 .add('FlatListContainer', () => (
-  <FlatListContainer></FlatListContainer>
+  <View>
+    <Header>STQ Publicidade</Header>
+    <FlatListContainer></FlatListContainer>
+  </View>
 ))
 
 storiesOf('Components', module)
 .add('Input', () => (
-  <Input></Input>
+  <ScrollView>
+    <Input 
+      label='Input text com icone'
+      icon={{reverse:true, name:'user', type:'font-awesome', color:'#517fa4'}}
+      placeholder='Digite um texto'></Input>
+
+    <Input 
+      label='Input password com icone'
+      secureTextEntry={true} 
+      icon={{reverse:true, name:'key', type:'font-awesome', color:'#517fa4'}}></Input>
+
+      <Input 
+        label='Input sem icone'
+        placeholder='Digite um texto'></Input>
+
+      <Input label='Input sem icone com validacao' error={{message:'Mensagem de validacao'}}></Input>
+
+      <Input label='' placeholder='Input sem labe ecom placeholder'></Input>
+
+    </ScrollView>
 ))
 .add('Title', () => (
   <Title>Login</Title>
